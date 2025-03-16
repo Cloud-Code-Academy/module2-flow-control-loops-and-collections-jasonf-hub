@@ -387,15 +387,15 @@ public with sharing class FlowControlLoopsCollections {
      * @return The Map of fruits and their quantities.
      */
     public static Map<String, Integer> addItemsToMap() {
-        Map<String, Integer> FruitByQuan = new Map<String, Integer>();
+        Map<String, Integer> fruitByQuan = new Map<String, Integer>();
         // Initialize an empty Map
         
-        FruitByQuan.put('Apples' , 5);
-        FruitByQuan.put('Oranges', 10);
-        FruitByQuan.put('Bananas', 15);
-        FruitByQuan.put('Pears', 20);
-        FruitByQuan.put('Grapes',25);
-        return FruitByQuan;
+        fruitByQuan.put('Apples' , 5);
+        fruitByQuan.put('Oranges', 10);
+        fruitByQuan.put('Bananas', 15);
+        fruitByQuan.put('Pears', 20);
+        fruitByQuan.put('Grapes',25);
+        return fruitByQuan;
 // Replace null with the variable you used to store the result
     }
 
@@ -415,7 +415,6 @@ public with sharing class FlowControlLoopsCollections {
         eeSalaries.put('Jane Smith', 60000 );
         eeSalaries.put('Sam Brown',55000 );
         eeSalaries.put('Alice Johnson',65000 );
-        String chosenEmployee ;
     
         if(eeSalaries.containsKey(employeeName )){
             return eeSalaries.get(employeeName);
@@ -459,7 +458,6 @@ public with sharing class FlowControlLoopsCollections {
         eeSalaries.put('Jane Smith', 60000 );
         eeSalaries.put('Sam Brown',55000 );
         eeSalaries.put('Alice Johnson',65000 );
-        String chosenEmployee ;
         for(String employee : eeSalaries.keySet()){
                 if(eesalaries.get(employee)>55000){
                     highSalEmployees.add(employee);
